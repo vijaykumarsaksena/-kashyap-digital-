@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरा Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin: 30px 0;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .section p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s;
+        }
+        
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-pic">👤</div>
+            <h1>आपका नाम यहाँ</h1>
+            <p class="tagline">AI के साथ सीखने वाला | Future-Ready Professional</p>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 मेरे बारे में</h2>
+            <p>
+                मैं एक passionate learner हूं जो AI और technology के साथ अपने skills को 
+                upgrade कर रहा/रही हूं। Claude AI के साथ मिलकर मैं हर दिन कुछ नया सीख रहा/रही हूं 
+                और बना रहा/रही हूं।
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>💪 मेरे Skills</h2>
+            <div class="skills">
+                <div class="skill">Quick Learner</div>
+                <div class="skill">Problem Solver</div>
+                <div class="skill">Creative Thinker</div>
+                <div class="skill">Team Player</div>
+                <div class="skill">AI Enthusiast</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🚀 मेरा Journey</h2>
+            <p>
+                यह website मैंने Claude AI के साथ मिलकर बनाई है - यह मेरी learning journey 
+                का पहला step है। आगे और भी amazing चीज़ें बनाऊंगा/बनाऊंगी!
+            </p>
+        </div>
+        
+        <div class="cta">
+            <a href="#" class="button">मुझसे संपर्क करें</a>
+        </div>
+        
+        <div class="footer">
+            <p>Made with ❤️ using Claude AI | Day 1 of My Journey</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple interactive element
+        document.querySelector('.button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('🎉 बहुत बढ़िया! आपने अपनी पहली interactive website बना ली!\n\nअब इसे customize करो:\n- अपना नाम डालो\n- Colors बदलो\n- और sections add करो\n\nClaude हमेशा मदद के लिए है! 💙');
+        });
+        
+        // Skill hover effect
+        document.querySelectorAll('.skill').forEach(skill => {
+            skill.addEventListener('click', function() {
+                this.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
+                setTimeout(() => {
+                    this.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
